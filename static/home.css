@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&family=Quicksand:wght@500&display=swap');
+
+body {
+    background-color: #282c35; /* Dark blue-gray */
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1e26; /* Darker blue-gray */
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #ffffff; /* Orange */
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-link1,
+.nav-link2 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link1 li,
+.nav-link2 li {
+    margin-left: 1rem;
+}
+
+.nav-link1 li a,
+.nav-link2 li a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link1 li a:hover,
+.nav-link2 li a:hover {
+    color: #282c35; /* Dark blue-gray */
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+}
+
+center {
+    position: relative;
+    margin: 2rem;
+    padding: 3rem;
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 1rem;
+    background-color: #1a1e26; /* Darker blue-gray */
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.3);
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+center p {
+    font-weight: normal;
+}
+
+#allBlogsContainer .blog {
+    border: 0.1rem solid #ffffff;
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #282c35; /* Dark blue-gray */
+}
+
+#allBlogsContainer {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+#allBlogsContainer h4 {
+    font-weight: bold;
+    color: #ff9900; /* Orange */
+}

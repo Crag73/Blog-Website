@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form action="/login" method="post">
+    <h1>signup</h1>
+        <input type="text" name="username" placeholder="Username">
+         <input type="mail" name="mail" placeholder="E-mail">
+        <input type="password" name="password" placeholder="Password">
+       
+        <button type="submit" onsubmit="verifymail(event)">Register</button>
+    </form>
+    <script>
+async function verifymail(event) {
+    event.preventDefault();
+
+    try {
+            await axios.post("/verifyemail");
+            window.alert("Verification email sent. Please check your email.");
+            event.target.submit();
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+    </script>
+</body>
+</html>
